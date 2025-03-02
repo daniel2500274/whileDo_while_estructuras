@@ -49,7 +49,7 @@ do {
             alert("La suma es: " + suma);
             break;
 
-        case 4: // Nombre del día
+        case 4: // Nombre del día - tome el domingo como primer dia de la semana
             let numDia = parseInt(prompt("Ingrese el número del día (1-7):"));
             if (isNaN(numDia) || numDia < 1 || numDia > 7) {
                 alert("Dia ingresado no valido");
