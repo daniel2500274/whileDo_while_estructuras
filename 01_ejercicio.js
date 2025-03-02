@@ -39,16 +39,49 @@ do {
             break;
 
         case 3: // Suma de dos números
-            let num1 = parseFloat(prompt("Ingrese el primer número:"));
-            let num2 = parseFloat(prompt("Ingrese el segundo número:"));
+            const num1 = parseFloat(prompt("Ingrese el primer número:"));
+            const num2 = parseFloat(prompt("Ingrese el segundo número:"));
             if (isNaN(num1) || isNaN(num2)) {
                 alert("Datos ingresados no validos");
                 break;
             }
-            let suma = num1 + num2;
+            const suma = num1 + num2;
             alert("La suma es: " + suma);
             break;
 
+        case 4: // Nombre del día
+            let numDia = parseInt(prompt("Ingrese el número del día (1-7):"));
+            if (isNaN(numDia) || numDia < 1 || numDia > 7) {
+                alert("Dia ingresado no valido");
+                break;
+            }
+            let nombreDia;
+            switch (numDia) {
+                case 1:
+                    nombreDia = "Domingo";
+                    break;
+                case 2:
+                    nombreDia = "Lunes";
+                    break;
+                case 3:
+                    nombreDia = "Martes";
+                    break;
+                case 4:
+                    nombreDia = "Miércoles";
+                    break;
+                case 5:
+                    nombreDia = "Jueves";
+                    break;
+                case 6:
+                    nombreDia = "Viernes";
+                    break;
+                case 7:
+                    nombreDia = "Sábado";
+                    break;
+
+            }
+            alert("El día es: " + nombreDia);
+            break;
 
         case 5:
             alert("Saliendo del programa...");
